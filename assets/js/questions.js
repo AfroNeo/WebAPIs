@@ -20,19 +20,18 @@ const questions = [
     },
     {
         question: '2. How do you create a function in JavaScript?',
-        answers: ['function = myFunction()', 'function myFunction()', "function:myFunction()"],
+        answers: ['function = myFunction()', 'function myFunction()', 'function:myFunction()'],
         correctAnswer: 'function myFunction()'
     },
     {
-        question: '3. How do you write "Hello World" in an alert box?',
-        answers: ['alert("Hello World");', 'msgBox("Hello World");', 'alertBox("Hello World");','msg("Hello World");'],
-        correctAnswer: 'alert("Hello World");'
+        question: '3. Which event occurs when the user clicks on an HTML element?',
+        answers: ['onclick', 'onchange', 'onmouseover', 'onmouseclick'],
+        correctAnswer: 'onclick'
 
-        // continue with my questions and possible answers
     },
     {
-        question: '4. How do you create a function in JavaScript?',
-        answers: ['function = myFunction()', 'function myFunction()', 'Function:myFunction()'],
+        question: '4. How do you round the number 7.25, to the nearest integer?',
+        answers: ['Math.round(7.25', 'rnd(7.25', 'round(7.25)', 'Math.rnd(7.25)'],
         correctAnswer: 'function myFunction()'
      },
      {
@@ -67,3 +66,4 @@ const questions = [
      },
 
 ];
+        console.log(questions)
