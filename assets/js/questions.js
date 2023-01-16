@@ -11,7 +11,8 @@ console.log('questions.js file has been read first');
 // let count
 
 
-//These are my Quiz Questions:
+//These are my Quiz Questions. I have written 10 questions with possible answers.
+//I have included a 60 second live count down timer with a -5 seconds for every wrong answer on the logic.js page
 const questions = [
     {
        question: '1. How do you write "Hello World" in an alert box?',
@@ -36,7 +37,7 @@ const questions = [
      },
      {
         question: '5. How do you call a function named "myFunction"?',
-        answers: ['myFuntion', 'call myFunction', 'call function my Function()'],
+        answers: ['myFunction()', 'call myFunction', 'call function my Function()'],
         correctAnswer: 'myFunction()'
      },
      {
@@ -66,4 +67,4 @@ const questions = [
      },
 
 ];
-        console.log(questions)
+ 
