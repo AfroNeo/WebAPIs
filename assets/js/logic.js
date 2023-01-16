@@ -8,7 +8,9 @@ const questionTitle = document.getElementById('question-title');
 const questionChoices = document.getElementById('choices');
 const timeEl = document.getElementById('time');
 const endScreen = document.getElementById('end-screen');
+//const feedBack = document.getElementById('feedback');
 
+//this is where I put my timer interval and the the 60 countdown. I did this last.
 let currentIndex = 0
 let timer;
 let time = 60;
@@ -77,8 +79,8 @@ function endQuiz(){
 startQuizBtn.addEventListener('click', function() {
     // hide the start button
     this.classList.add('hide');
-    // run the displayNextQuestion function
 
+    // run the displayNextQuestion function
     displayNextQuestion();
     setTimer()
 
@@ -92,6 +94,8 @@ questionChoices.addEventListener('click',()=>{
 
 
 })
+
+
 
 
 
