@@ -8,8 +8,10 @@ const questionTitle = document.getElementById('question-title');
 const questionChoices = document.getElementById('choices');
 const timeEl = document.getElementById('time');
 const endScreen = document.getElementById('end-screen');
+//working on final socre and initials. do I need to link it to the High Score .js only?
+// const theScore = document.getElementById('final-score');
+// const userName = document.getElementById('initials');
 
-const userName = document.getElementById('initials');
 
 
 //const feedBack = document.getElementById('feedback');
@@ -43,7 +45,9 @@ function displayNextQuestion() {
     console.log('click heard from displayNextQuestion');
     // set the title and choices to the questionsBox
     questionTitle.textContent = questions[currentIndex].question;
+    
     // now assign the values of the choices to questionChoices
+
     for(let i = 0; i < questions[currentIndex].answers.length; i++) {
         const btn = document.createElement('button');
         btn.textContent = questions[currentIndex].answers[i];
@@ -53,6 +57,8 @@ function displayNextQuestion() {
 }
 function checkAnswer(choiceAnswer){
 // console.log(choiceAnswer)
+
+
 if(choiceAnswer===questions[currentIndex].correctAnswer){
 currentIndex++
 // questionsBox.innerHTML=""
@@ -78,9 +84,11 @@ function endQuiz(){
 }
 
 //add local storage here. Set Item
-// localStorage.setItem("lastname", "Smith");
+// function localStorage (){
+//     userName.localStorage.remove('hide')
+// }
 // // Retrieve
-//     document.getElementById("demo").innerHTML = localStorage.getItem("lastname");
+//     document.getElementById('initials').innerHTML = localStorage.getItem("initials");
 
 // add event listeners to the very bottom of your page
 startQuizBtn.addEventListener('click', function() {
@@ -93,7 +101,8 @@ startQuizBtn.addEventListener('click', function() {
     //this is how I call a function to make it work.
     setTimer();
 
-    // setItem();
+    // localStorage();
+
 
 })
 
@@ -106,6 +115,9 @@ questionChoices.addEventListener('click',()=>{
 
 })
 
+
+//need to do High Scores .js
+//not enough time!!!
 
 
 

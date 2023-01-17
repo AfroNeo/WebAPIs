@@ -107,6 +107,7 @@ What next:
 *I need to link the highscores.html with the the logic.js page
 *I need to console.log and test the function.
 
+**Note this homework challenge is incomplete and requires more time
 
 
 

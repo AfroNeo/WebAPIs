@@ -65,6 +65,6 @@ const questions = [
         answers: ['var colors = ["red", "green", "blue"]', 'var colors = 1 = ("red"), 2 = ("green"), 3 = ("blue")', 'var colors = (1:"red", 2:"green", 3:"blue")', 'var colors = "red", "green", "blue"'],
         correctAnswer: 'var colors = ["red", "green", "blue"]'
      },
-
+     
 ];
- 
+
