@@ -8,6 +8,10 @@ const questionTitle = document.getElementById('question-title');
 const questionChoices = document.getElementById('choices');
 const timeEl = document.getElementById('time');
 const endScreen = document.getElementById('end-screen');
+
+const userName = document.getElementById('initials');
+
+
 //const feedBack = document.getElementById('feedback');
 
 //this is where I put my timer interval and the the 60 countdown. I did this last.
@@ -72,8 +76,11 @@ function endQuiz(){
     questionsBox.style.display="none"
     endScreen.classList.remove("hide")
 }
-//add local storage here
 
+//add local storage here. Set Item
+// localStorage.setItem("lastname", "Smith");
+// // Retrieve
+//     document.getElementById("demo").innerHTML = localStorage.getItem("lastname");
 
 // add event listeners to the very bottom of your page
 startQuizBtn.addEventListener('click', function() {
@@ -82,7 +89,11 @@ startQuizBtn.addEventListener('click', function() {
 
     // run the displayNextQuestion function
     displayNextQuestion();
-    setTimer()
+
+    //this is how I call a function to make it work.
+    setTimer();
+
+    // setItem();
 
 })
 
